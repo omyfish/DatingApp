@@ -10,6 +10,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TimeAgoPipe} from 'time-ago-pipe';
 
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
@@ -51,7 +52,8 @@ export function tokenGetter() {
       MemberEditComponent,
       PhotoEditorComponent,
       ListsComponent,
-      MessagesComponent
+      MessagesComponent,
+      TimeAgoPipe,
    ],
    imports: [
       BrowserModule,
