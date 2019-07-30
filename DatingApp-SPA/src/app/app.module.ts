@@ -10,7 +10,9 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimeAgoPipe} from 'time-ago-pipe';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
@@ -43,12 +45,12 @@ export function tokenGetter() {
    declarations: [
       AppComponent,
       ValueComponent,
-      NavComponent,
       HomeComponent,
+      NavComponent,
       RegisterComponent,
       MemberListComponent,
-      MemberCardComponent,
       MemberDetailComponent,
+      MemberCardComponent,
       MemberEditComponent,
       PhotoEditorComponent,
       ListsComponent,
@@ -63,9 +65,11 @@ export function tokenGetter() {
       BsDatepickerModule.forRoot(),
       BrowserAnimationsModule,
       NgxGalleryModule,
+      ButtonsModule.forRoot(),
       BsDropdownModule.forRoot(),
       TabsModule.forRoot(),
       FileUploadModule,
+      PaginationModule.forRoot(),
       RouterModule.forRoot(appRoute),
       JwtModule.forRoot({
          config: {
